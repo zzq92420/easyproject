@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>产品介绍</title>
+	<link type="text/css" rel="stylesheet" href="style/main.css">
+	<link type="text/css" rel="stylesheet" href="style/reset.css">
+	<link type="text/css" rel="stylesheet" href="css/color.css">
+	
+	<script type="text/javascript">
+	function sendok(){	
+		if(userid.value!="" && userpwd.value!=""){		
+			localStorage.userid=userid.value;
+			sessionStorage.userpwd=userpwd.value;
+			return true;
+		}else{
+			alert("请输入账号");
+			return false;
+		}
+	}
+	
+	function isload(){
+	if(localStorage.userid)
+		userid.value=localStorage.userid;
+	}
+	</script> 
+</head>
+
+<body class="grey">
+	<div class="headerbar">
+		<div class="topbar">
+			<div class="comwidth">
+				<div class="leftarea">
+					<a href="#" class="collection"></a>
+				</div>
+				<div class="rightarea">
+					欢迎来到GTA5中文网！<a href="login.html">[登录]</a><a href="register.html">[免费注册]</a>
+				</div>
+			</div>
+		</div>
+		<div class="logobar">
+			<div class="comwidth">
+				<div class="logo fl">
+				<a href="#"><img src="img/gta5.png" height="59px" width="112px" alt="GTA5"></a>
+				</div>
+				</div>
+				<div class="search_box fl">
+					<input type="text" class="serach_text fl">
+					<input type="button" value="搜 索" class="search_btn fr">
+				</div>
+
+			</div>
+		</div>
+	<div class="dhbox">
+		<div class="comwidth">
+			<div class="shopclass fl">
+				<h3>GTA5精彩视频</h3>
+
+				<div class="shopclass_list">
+					<div class="shopclass_cont hide">
+						
+
+					</div>
+				</div>
+			</div>
+			<ul class="dh fl">
+				<li><a href="first.html">主页</a></li>
+				<li><a href="character.html">角色</a></li>
+				<li><a href="home.html">剧情</a></li>
+				<li><a href="game.html">小游戏</a></li>
+				<li><a href="require.html">配置</a></li>
+				<li><a href="vedio.html">视频</a></li>
+				<li><a href="music.html">音乐</a></li>
+				<li><a href="photo.html">图片</a></li>
+				<li><a href="message.html">留言</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+	<div class="userPosition comwidth">
+
+		
+	</div>
+	<div class="description_info comwidth">
+		<div class="description clearfix">
+			<div class="leftarea">
+				<div class="description_imgs">
+					<div class="big">
+						<img src="images/5.jpg" height="340" width="266px" alt="">
+					</div>
+					<ul class="des_img">
+						<li><a href="#"><img src="images/1.jpg" height="52" width="52px" alt="" class="active"></a></li>
+						<li><a href="#"><img src="images/2.jpg" height="52" width="52px" alt=""></a></li>
+						<li><a href="#"><img src="images/3.jpg" height="52" width="52px" alt=""></a></li>
+						<li><a href="#"><img src="images/4.jpg" height="52" width="52px" alt=""></a></li>
+						<li><a href="#"><img src="images/5.jpg" height="52" width="52px" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="rightarea">
+				<div class="des_content">
+					<form method="get" action="shopping.htm" onsubmit="return sendok();">
+						<table   border="0" cellpadding="2" cellspacing="2" width="60%">
+						<tr>请输入账号：<br />
+						<input type="text" id="userid" value="" autofocus><br />
+						</tr>
+						请输入密码：<br />
+						<input type="password" id="userpwd" value=""><br /><font style="font-size:12px">
+						</font>(管理员账号：zzq 密码:zzq)<br />
+						<input id="btn_send" type="submit" value="登录"><br />	
+						</table>
+					</form>
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hr_15"></div>
+	<div class="des_info comwidth clearfix">
+		<div class="leftArea">
+			<div class="recommend">
+				<h3 class="tit">同价位</h3>
+			</div>
+	</div>
+	<div class="hr_25"></div>
+	<div class="footer">
+		<p>岭南师范学院信息工程学院钟振权专属</p>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>休闲游戏</title>
+	<link type="text/css" rel="stylesheet" href="style/main.css">
+	<link type="text/css" rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/play.css">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<script type="text/javascript" src="js/jquery-1.12.2.js"></script>
+	<script type="text/javascript" src="js/play.js"></script>
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body class="grey">
+	<div class="headerbar">
+		<div class="topbar">
+			<div class="comwidth">
+				<div class="leftarea">
+					<a href="#" class="collection"></a>
+				</div>
+				<div class="rightarea">
+					欢迎来到GTA5中文网！<a href="login.html">[登录]</a><a href="register.html">[免费注册]</a>
+				</div>
+			</div>
+		</div>
+		<div class="logobar">
+			<div class="comwidth">
+				<div class="logo fl">
+				<a href="#"><img src="img/gta5.png" height="59px" width="112px" alt="GTA5"></a>
+				</div>
+				</div>
+				<div class="search_box fl">
+					<input type="text" class="serach_text fl">
+					<input type="button" value="搜 索" class="search_btn fr">
+				</div>
+
+			</div>
+		</div>
+	<div class="dhbox">
+		<div class="comwidth">
+			<div class="shopclass fl">
+				<h3>GTA5精彩视频</h3>
+
+				<div class="shopclass_list">
+					<div class="shopclass_cont hide">
+						
+
+					</div>
+				</div>
+			</div>
+			<ul class="dh fl">
+				<li><a href="first.html">主页</a></li>
+				<li><a href="character.html">角色</a></li>
+				<li><a href="home.html">剧情</a></li>
+				<li><a href="game.html">小游戏</a></li>
+				<li><a href="require.html">配置</a></li>
+				<li><a href="vedio.html">视频</a></li>
+				<li><a href="music.html">音乐</a></li>
+				<li><a href="photo.html" class="active">图片</a></li>
+				<li><a href="message.html">留言</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+	<div class="userPosition comwidth">
+
+	</div>
+	<div class="description_info comwidth">
+		<div class="description clearfix">
+
+				<div class="des_content">
+					
+					
+					<div id="mask">
+					    <div class="center">
+					      
+					      <img :src="imgList[index]" alt="" />
+					      <a
+					        href="javascript:void(0)"
+					        @click="prev"
+					        class="left"
+					        v-show="index>0"
+					      >
+					        <img src="./images/prev.png" alt="" />
+					      </a>
+					      <a
+					        href="javascript:void(0)"
+					        @click="next"
+					        class="right"
+					        v-show="index<imgList.length-1"
+					      >
+					        <img src="./images/next.png" alt="" />
+					      </a>
+					    </div>
+					  </div>
+					
+					  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+					 
+					  <script>
+					    const app = new Vue({
+					      el: "#mask",
+					      data: {
+					        imgList: [
+					          
+					          "./images/1.jpg",
+					          "./images/2.jpg",
+					          "./images/3.jpg",
+					          "./images/4.jpg",
+					          "./images/5.jpg",
+					          "./images/6.jpg",
+					          "./images/7.jpg",
+					          "./images/8.jpg",
+					          "./images/9.jpg",
+					          
+					        ],
+					        index: 0
+					      },
+					      methods: {
+					        // 上一张
+					        prev() {
+					          this.index--;
+					        },
+					        // 下一张
+					        next() {
+					          this.index++;
+					        }
+					      }
+					    });
+					  </script>
+					
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hr_15"></div>
+	<div class="des_info comwidth clearfix">
+		<div class="leftArea">
+			<div class="recommend">
+				<h3 class="tit">同价位</h3>
+			</div>
+	</div>
+	<div class="hr_25"></div>
+	<div class="footer">
+		<p>岭南师范学院信息工程学院钟振权专属</p>
+	</div>
+</body>
+
+</html>
